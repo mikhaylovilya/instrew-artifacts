@@ -1,3 +1,6 @@
 [submodule "coreutils"]
 	path = coreutils
 	url = https://github.com/coreutils/coreutils.git
+[submodule "instrew"]
+	path = instrew
+	url = git@github.com:mikhaylovilya/instrew.git
