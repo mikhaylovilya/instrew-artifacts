@@ -1,0 +1,964 @@
+➜  mikhaylovilya ./bench_linpack_run.sh
+#!/bin/bash -v
+
+# instrew with different flags
+for i in $(seq 5); 
+do 
+    taskset -c 1 ~/mikhaylovilya/instrew/build-gcc-14-release/server/instrew --fastcc --targetopt=2 linpack-x86-builds/linpack-generic-static-x86_64; 
+done;
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@
+      32   0.89  93.05%   2.86%   4.09%  51236.253
+      64   1.79  93.04%   2.86%   4.10%  51225.056
+     128   3.58  93.04%   2.86%   4.10%  51236.298
+     256   7.16  93.02%   2.87%   4.10%  51197.634
+     512  14.31  93.05%   2.86%   4.09%  51237.142
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@
+      32   0.89  93.05%   2.86%   4.09%  51244.558
+      64   1.79  93.04%   2.86%   4.10%  51223.951
+     128   3.58  93.05%   2.86%   4.09%  51239.733
+     256   7.16  93.04%   2.86%   4.10%  51234.775
+     512  14.30  93.05%   2.86%   4.09%  51257.786
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@
+      32   0.89  93.05%   2.87%   4.09%  51269.368
+      64   1.79  93.04%   2.87%   4.09%  51262.730
+     128   3.58  93.04%   2.87%   4.09%  51263.716
+     256   7.15  93.04%   2.87%   4.09%  51274.879
+     512  14.30  93.03%   2.87%   4.10%  51256.317
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@
+      32   0.89  93.03%   2.87%   4.10%  51332.847
+      64   1.79  93.03%   2.87%   4.09%  51330.209
+     128   3.57  93.04%   2.87%   4.09%  51336.820
+     256   7.14  93.03%   2.87%   4.10%  51323.293
+     512  14.28  93.04%   2.87%   4.09%  51329.220
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@
+      32   0.89  93.05%   2.86%   4.10%  51313.128
+      64   1.79  93.05%   2.86%   4.09%  51312.858
+     128   3.57  93.05%   2.86%   4.09%  51311.600
+     256   7.15  93.04%   2.86%   4.10%  51299.943
+     512  14.30  93.03%   2.87%   4.10%  51272.340
+
+for i in $(seq 5); 
+do 
+    taskset -c 1 ~/mikhaylovilya/instrew/build-gcc-14-release/server/instrew --fastcc --targetopt=3 linpack-x86-builds/linpack-generic-static-x86_64; 
+done;
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA
+    Reps Time(s) DGEFA   DGESL  OVERHEAD  
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A���?�������?@�@Y@$@�����
+      32   0.89  93.03%   2.87%   4.10%  51304.142
+      64   1.79  93.03%   2.87%   4.10%  51321.308
+     128   3.57  93.04%   2.87%   4.10%  51326.028
+     256   7.14  93.04%   2.87%   4.09%  51325.443
+     512  14.29  93.04%   2.87%   4.10%  51318.326
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA
+    Reps Time(s) DGEFA   DGESL  OVERHEAD  
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A���?�������?@�@Y@$@�����
+      32   0.89  93.04%   2.87%   4.09%  51262.311
+      64   1.79  93.03%   2.87%   4.10%  51250.594
+     128   3.58  93.03%   2.87%   4.10%  51253.328
+     256   7.15  93.03%   2.87%   4.10%  51256.698
+     512  14.30  93.04%   2.87%   4.09%  51255.002
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA
+    Reps Time(s) DGEFA   DGESL  OVERHEAD  
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A���?�������?@�@Y@$@�����
+      32   0.89  93.04%   2.87%   4.09%  51278.880
+      64   1.79  93.04%   2.87%   4.10%  51261.803
+     128   3.57  93.04%   2.87%   4.09%  51270.370
+     256   7.15  93.04%   2.86%   4.09%  51276.973
+     512  14.30  93.04%   2.87%   4.09%  51265.832
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA
+    Reps Time(s) DGEFA   DGESL  OVERHEAD  
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A���?�������?@�@Y@$@�����
+      32   0.89  93.03%   2.87%   4.10%  51377.377
+      64   1.78  93.04%   2.87%   4.10%  51380.590
+     128   3.57  93.04%   2.87%   4.10%  51381.792
+     256   7.13  93.04%   2.87%   4.10%  51382.475
+     512  14.27  93.03%   2.87%   4.10%  51377.891
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA
+    Reps Time(s) DGEFA   DGESL  OVERHEAD  
+----------------------------------------------------%8ld %6.2f %6.2f%% %6.2f%% %6.2f%%  %9.3f
+�@@��.A���?�������?@�@Y@$@�����
+      32   0.89  93.05%   2.87%   4.09%  51299.471
+      64   1.79  93.04%   2.87%   4.10%  51287.078
+     128   3.57  93.04%   2.87%   4.09%  51296.178
+     256   7.15  93.04%   2.87%   4.09%  51292.511
+     512  14.29  93.04%   2.87%   4.09%  51293.244
+
+for i in $(seq 5); 
+do 
+    taskset -c 1 ~/mikhaylovilya/instrew/build-gcc-14-release/server/instrew --fastcc --targetopt=2 --callret linpack-x86-builds/linpack-generic-static-x86_64; 
+done;
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS-------------------------------------------------
+ 
+---------------------------------------------------
+      32   0.89  93.00%   2.88%   4.12%  51710.539
+      64   1.77  93.00%   2.88%   4.12%  51697.947
+     128   3.55  93.00%   2.88%   4.12%  51706.888
+     256   7.09  93.00%   2.88%   4.12%  51707.839
+     512  14.19  92.98%   2.89%   4.13%  51681.942
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS-------------------------------------------------
+ 
+---------------------------------------------------
+      32   0.89  93.01%   2.88%   4.11%  51659.721
+      64   1.77  93.00%   2.88%   4.12%  51677.156
+     128   3.55  93.00%   2.88%   4.12%  51686.485
+     256   7.09  93.00%   2.88%   4.12%  51691.425
+     512  14.19  93.00%   2.88%   4.12%  51686.386
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS-------------------------------------------------
+ 
+---------------------------------------------------
+      32   0.89  93.00%   2.88%   4.12%  51575.026
+      64   1.78  92.99%   2.88%   4.12%  51575.207
+     128   3.55  93.01%   2.87%   4.12%  51622.796
+     256   7.10  93.01%   2.87%   4.12%  51621.174
+     512  14.20  93.01%   2.87%   4.12%  51630.055
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS-------------------------------------------------
+ 
+---------------------------------------------------
+      32   0.89  93.01%   2.88%   4.12%  51622.341
+      64   1.78  93.01%   2.87%   4.12%  51633.683
+     128   3.55  93.01%   2.87%   4.12%  51647.776
+     256   7.10  93.01%   2.87%   4.11%  51632.197
+     512  14.20  93.00%   2.88%   4.12%  51626.063
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS-------------------------------------------------
+ 
+---------------------------------------------------
+      32   0.89  92.99%   2.88%   4.12%  51750.302
+      64   1.77  92.99%   2.89%   4.13%  51731.539
+     128   3.54  92.99%   2.88%   4.12%  51742.228
+     256   7.09  92.99%   2.89%   4.12%  51732.567
+     512  14.17  93.00%   2.88%   4.12%  51748.359
+
+
+# box64
+for i in $(seq 5); 
+do 
+    taskset -c 1 ./box64-cross linpack-x86-builds/linpack-generic-static-x86_64; 
+done;
+[BOX64] Box64 with Dynarec v0.3.4 2b300bd1 built on May 26 2025 13:29:42
+[BOX64] Dynarec for rv64gv_zba_zbb_zbc_zbs_zvl256
+[BOX64] Running on Spacemit(R) X60 with 8 cores, pagesize: 4096
+[BOX64] Will use hardware counter measured at 24.0 MHz emulating 3.0 GHz
+[BOX64] Didn't detect 48bits of address space, considering it's 39bits
+[BOX64] Counted 45 Env var
+[BOX64] Library search path: 
+[BOX64] Binary search path: ./:bin/:/usr/local/sbin/:/usr/local/bin/:/usr/sbin/:/usr/bin/:/sbin/:/bin/:/usr/games/:/usr/local/games/:/snap/bin/
+[BOX64] Looking for linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Rename process to "linpack-generic-static-x86_64"
+[BOX64] Redirecting overridden malloc from symtab function for /home/banana/mikhaylovilya/linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Warning, CALL to 0x0 at 0x404601 (0x404600)
+Memory required:  315K.
+[BOX64] Warning, CALL to 0x0 at 0x4192fd (0x4192fc)
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      64   0.89  90.61%   2.84%   6.55%  105750.462
+     128   1.78  90.61%   2.84%   6.55%  105782.472
+     256   3.56  90.61%   2.84%   6.55%  105802.718
+     512   7.11  90.61%   2.84%   6.55%  105789.586
+    1024  14.23  90.61%   2.84%   6.55%  105774.451
+
+[BOX64] Box64 with Dynarec v0.3.4 2b300bd1 built on May 26 2025 13:29:42
+[BOX64] Dynarec for rv64gv_zba_zbb_zbc_zbs_zvl256
+[BOX64] Running on Spacemit(R) X60 with 8 cores, pagesize: 4096
+[BOX64] Will use hardware counter measured at 24.0 MHz emulating 3.0 GHz
+[BOX64] Didn't detect 48bits of address space, considering it's 39bits
+[BOX64] Counted 45 Env var
+[BOX64] Library search path: 
+[BOX64] Binary search path: ./:bin/:/usr/local/sbin/:/usr/local/bin/:/usr/sbin/:/usr/bin/:/sbin/:/bin/:/usr/games/:/usr/local/games/:/snap/bin/
+[BOX64] Looking for linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Rename process to "linpack-generic-static-x86_64"
+[BOX64] Redirecting overridden malloc from symtab function for /home/banana/mikhaylovilya/linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Warning, CALL to 0x0 at 0x404601 (0x404600)
+Memory required:  315K.
+[BOX64] Warning, CALL to 0x0 at 0x4192fd (0x4192fc)
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      64   0.89  90.60%   2.85%   6.55%  105521.933
+     128   1.78  90.57%   2.86%   6.57%  105458.312
+     256   3.56  90.59%   2.85%   6.56%  105569.810
+     512   7.13  90.59%   2.85%   6.55%  105539.767
+    1024  14.26  90.60%   2.85%   6.55%  105545.534
+
+[BOX64] Box64 with Dynarec v0.3.4 2b300bd1 built on May 26 2025 13:29:42
+[BOX64] Dynarec for rv64gv_zba_zbb_zbc_zbs_zvl256
+[BOX64] Running on Spacemit(R) X60 with 8 cores, pagesize: 4096
+[BOX64] Will use hardware counter measured at 24.0 MHz emulating 3.0 GHz
+[BOX64] Didn't detect 48bits of address space, considering it's 39bits
+[BOX64] Counted 45 Env var
+[BOX64] Library search path: 
+[BOX64] Binary search path: ./:bin/:/usr/local/sbin/:/usr/local/bin/:/usr/sbin/:/usr/bin/:/sbin/:/bin/:/usr/games/:/usr/local/games/:/snap/bin/
+[BOX64] Looking for linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Rename process to "linpack-generic-static-x86_64"
+[BOX64] Redirecting overridden malloc from symtab function for /home/banana/mikhaylovilya/linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Warning, CALL to 0x0 at 0x404601 (0x404600)
+Memory required:  315K.
+[BOX64] Warning, CALL to 0x0 at 0x4192fd (0x4192fc)
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      64   0.89  90.60%   2.84%   6.56%  105523.833
+     128   1.78  90.60%   2.84%   6.56%  105501.794
+     256   3.57  90.59%   2.85%   6.57%  105459.482
+     512   7.13  90.59%   2.84%   6.57%  105490.366
+    1024  14.27  90.60%   2.84%   6.57%  105496.990
+
+[BOX64] Box64 with Dynarec v0.3.4 2b300bd1 built on May 26 2025 13:29:42
+[BOX64] Dynarec for rv64gv_zba_zbb_zbc_zbs_zvl256
+[BOX64] Running on Spacemit(R) X60 with 8 cores, pagesize: 4096
+[BOX64] Will use hardware counter measured at 24.0 MHz emulating 3.0 GHz
+[BOX64] Didn't detect 48bits of address space, considering it's 39bits
+[BOX64] Counted 45 Env var
+[BOX64] Library search path: 
+[BOX64] Binary search path: ./:bin/:/usr/local/sbin/:/usr/local/bin/:/usr/sbin/:/usr/bin/:/sbin/:/bin/:/usr/games/:/usr/local/games/:/snap/bin/
+[BOX64] Looking for linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Rename process to "linpack-generic-static-x86_64"
+[BOX64] Redirecting overridden malloc from symtab function for /home/banana/mikhaylovilya/linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Warning, CALL to 0x0 at 0x404601 (0x404600)
+Memory required:  315K.
+[BOX64] Warning, CALL to 0x0 at 0x4192fd (0x4192fc)
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      64   0.90  90.67%   2.84%   6.49%  104650.369
+     128   1.80  90.66%   2.84%   6.50%  104639.031
+     256   3.59  90.66%   2.84%   6.50%  104645.946
+     512   7.19  90.66%   2.84%   6.50%  104638.331
+    1024  14.37  90.67%   2.84%   6.49%  104656.475
+
+[BOX64] Box64 with Dynarec v0.3.4 2b300bd1 built on May 26 2025 13:29:42
+[BOX64] Dynarec for rv64gv_zba_zbb_zbc_zbs_zvl256
+[BOX64] Running on Spacemit(R) X60 with 8 cores, pagesize: 4096
+[BOX64] Will use hardware counter measured at 24.0 MHz emulating 3.0 GHz
+[BOX64] Didn't detect 48bits of address space, considering it's 39bits
+[BOX64] Counted 45 Env var
+[BOX64] Library search path: 
+[BOX64] Binary search path: ./:bin/:/usr/local/sbin/:/usr/local/bin/:/usr/sbin/:/usr/bin/:/sbin/:/bin/:/usr/games/:/usr/local/games/:/snap/bin/
+[BOX64] Looking for linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Rename process to "linpack-generic-static-x86_64"
+[BOX64] Redirecting overridden malloc from symtab function for /home/banana/mikhaylovilya/linpack-x86-builds/linpack-generic-static-x86_64
+[BOX64] Warning, CALL to 0x0 at 0x404601 (0x404600)
+Memory required:  315K.
+[BOX64] Warning, CALL to 0x0 at 0x4192fd (0x4192fc)
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      64   0.89  90.60%   2.84%   6.56%  105648.010
+     128   1.78  90.60%   2.84%   6.56%  105648.708
+     256   3.56  90.61%   2.83%   6.56%  105654.359
+     512   7.12  90.60%   2.84%   6.56%  105655.010
+    1024  14.24  90.61%   2.83%   6.56%  105667.022
+
+
+# qemu-x86_64
+for i in $(seq 5); 
+do 
+    taskset -c 1 qemu-x86_64 linpack-x86-builds/linpack-generic-static-x86_64; 
+done;
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+       8   0.54  89.96%   2.81%   7.23%  22055.778
+      16   1.07  89.97%   2.81%   7.22%  22057.283
+      32   2.15  89.98%   2.80%   7.22%  22067.019
+      64   4.29  89.99%   2.80%   7.21%  22070.166
+     128   8.59  89.99%   2.80%   7.21%  22066.623
+     256  17.17  89.99%   2.80%   7.21%  22065.972
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+       8   0.53  90.01%   2.80%   7.19%  22132.644
+      16   1.07  90.01%   2.80%   7.19%  22131.507
+      32   2.14  90.00%   2.80%   7.20%  22132.700
+      64   4.28  90.00%   2.81%   7.20%  22126.615
+     128   8.56  90.02%   2.79%   7.19%  22133.578
+     256  17.11  90.01%   2.80%   7.19%  22134.708
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+       8   0.53  89.99%   2.81%   7.20%  22201.117
+      16   1.07  89.99%   2.80%   7.21%  22217.436
+      32   2.13  90.01%   2.80%   7.19%  22213.977
+      64   4.26  90.00%   2.80%   7.19%  22208.134
+     128   8.53  90.01%   2.80%   7.19%  22216.010
+     256  17.05  90.01%   2.80%   7.19%  22218.863
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+       8   0.53  90.00%   2.80%   7.20%  22211.171
+      16   1.07  90.00%   2.80%   7.20%  22209.824
+      32   2.13  90.00%   2.80%   7.20%  22214.584
+      64   4.26  90.01%   2.79%   7.19%  22217.616
+     128   8.53  90.00%   2.80%   7.20%  22210.171
+     256  17.06  89.99%   2.80%   7.20%  22203.824
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+       8   0.54  90.03%   2.82%   7.16%  21977.465
+      16   1.08  90.02%   2.81%   7.16%  21983.754
+      32   2.15  90.04%   2.81%   7.15%  21989.815
+      64   4.31  90.02%   2.82%   7.16%  21961.683
+     128   8.62  90.01%   2.82%   7.16%  21969.656
+     256  17.22  90.03%   2.81%   7.16%  21990.486
+
+#------------------------------------------------------------------------------------
+# instrew with different flags
+for i in $(seq 5); 
+do 
+    taskset -c 1 ~/mikhaylovilya/instrew/build-gcc-14-release/server/instrew --fastcc --targetopt=2 linpack/linpack-rv64g; 
+done;
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.11%   3.02%   7.87%  214926.239
+     256   1.77  89.11%   3.01%   7.88%  215716.292
+     512   3.55  89.11%   3.02%   7.87%  215137.657
+    1024   7.10  89.11%   3.02%   7.87%  215114.818
+    2048  14.19  89.12%   3.02%   7.86%  215200.966
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.12%   3.02%   7.86%  214628.659
+     256   1.78  89.12%   3.02%   7.85%  214738.778
+     512   3.55  89.12%   3.02%   7.86%  214802.738
+    1024   7.11  89.12%   3.02%   7.86%  214780.659
+    2048  14.22  89.12%   3.02%   7.86%  214725.482
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.12%   3.03%   7.86%  215204.358
+     256   1.77  89.12%   3.02%   7.86%  215491.914
+     512   3.54  89.13%   3.02%   7.86%  215263.916
+    1024   7.09  89.12%   3.02%   7.86%  215366.607
+    2048  14.17  89.12%   3.02%   7.86%  215349.177
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.09%   3.05%   7.86%  214053.426
+     256   1.76  89.16%   2.97%   7.87%  217105.140
+     512   3.57  89.10%   3.05%   7.85%  214006.779
+    1024   7.04  89.14%   2.98%   7.88%  216785.591
+    2048  14.11  89.14%   3.00%   7.87%  216346.264
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.88  89.09%   3.02%   7.89%  215723.042
+     256   1.77  89.09%   3.03%   7.88%  215201.064
+     512   3.55  89.10%   3.03%   7.88%  215299.641
+    1024   7.08  89.09%   3.02%   7.88%  215490.692
+    2048  14.14  89.10%   3.01%   7.89%  215986.939
+
+for i in $(seq 5); 
+do 
+    taskset -c 1 ~/mikhaylovilya/instrew/build-gcc-14-release/server/instrew --fastcc --targetopt=3 linpack/linpack-rv64g; 
+done;
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.10%   3.01%   7.89%  215505.915
+     256   1.77  89.10%   3.02%   7.88%  215525.600
+     512   3.54  89.10%   3.02%   7.88%  215413.683
+    1024   7.09  89.10%   3.02%   7.88%  215412.066
+    2048  14.17  89.11%   3.02%   7.88%  215418.072
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.88  89.12%   3.01%   7.87%  215779.974
+     256   1.77  89.10%   3.03%   7.87%  215152.073
+     512   3.55  89.11%   3.02%   7.87%  214984.461
+    1024   7.10  89.11%   3.02%   7.87%  215039.426
+    2048  14.19  89.11%   3.02%   7.87%  215087.214
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.10%   3.02%   7.88%  215575.951
+     256   1.77  89.11%   3.01%   7.88%  215756.006
+     512   3.54  89.10%   3.02%   7.88%  215505.783
+    1024   7.09  89.10%   3.01%   7.88%  215415.498
+    2048  14.17  89.11%   3.02%   7.88%  215429.737
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.07%   3.04%   7.88%  214807.791
+     256   1.75  89.14%   2.97%   7.89%  217685.188
+     512   3.53  89.11%   3.00%   7.88%  215932.649
+    1024   7.08  89.10%   3.02%   7.88%  215557.975
+    2048  14.15  89.10%   3.02%   7.88%  215738.033
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.89  89.09%   3.04%   7.87%  214556.095
+     256   1.75  89.15%   2.97%   7.88%  217637.215
+     512   3.53  89.13%   2.99%   7.88%  216498.441
+    1024   7.05  89.13%   2.99%   7.88%  216450.756
+    2048  14.02  89.15%   2.97%   7.89%  217726.659
+
+for i in $(seq 5); 
+do 
+    taskset -c 1 ~/mikhaylovilya/instrew/build-gcc-14-release/server/instrew --fastcc --targetopt=2 --callret linpack/linpack-rv64g; 
+done;
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.87  88.98%   3.02%   8.00%  220450.625
+     256   1.73  88.99%   3.01%   8.01%  220703.879
+     512   3.46  88.99%   3.01%   8.00%  220596.832
+    1024   6.94  88.99%   3.02%   7.99%  220270.553
+    2048  13.88  88.98%   3.02%   8.00%  220202.054
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.88  89.01%   3.04%   7.95%  217821.946
+     256   1.75  89.00%   3.03%   7.97%  218427.546
+     512   3.48  89.02%   3.01%   7.97%  219331.819
+    1024   6.99  89.01%   3.03%   7.96%  218647.271
+    2048  14.01  89.01%   3.03%   7.96%  218034.335
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.87  89.01%   3.00%   7.99%  220075.000
+     256   1.73  89.01%   2.99%   8.00%  220477.030
+     512   3.50  88.98%   3.05%   7.97%  218254.455
+    1024   6.99  88.99%   3.04%   7.97%  218512.056
+    2048  13.95  89.01%   3.02%   7.97%  219085.269
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.88  88.98%   3.06%   7.96%  217703.790
+     256   1.74  89.02%   3.00%   7.98%  219901.696
+     512   3.51  88.97%   3.06%   7.97%  217786.121
+    1024   6.96  89.02%   3.01%   7.97%  219473.532
+    2048  13.97  89.00%   3.03%   7.97%  218794.500
+
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.88  89.00%   3.04%   7.96%  217687.614
+     256   1.75  88.99%   3.04%   7.97%  217954.282
+     512   3.51  89.00%   3.04%   7.96%  217959.551
+    1024   7.01  89.00%   3.04%   7.96%  218007.058
+    2048  14.02  89.00%   3.04%   7.96%  218005.115
+
+
+# box64
+for i in $(seq 5); 
+do 
+    taskset -c 1 linpack/linpack-rv64g; 
+done;
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.67  87.22%   3.04%   9.74%  289540.450
+     256   1.36  87.23%   3.07%   9.70%  285594.911
+     512   2.72  87.21%   3.09%   9.70%  286254.844
+    1024   5.34  87.21%   3.02%   9.77%  291941.931
+    2048  10.77  87.24%   3.03%   9.73%  289246.141
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.68  87.22%   3.09%   9.69%  284500.148
+     256   1.37  87.22%   3.09%   9.69%  285140.224
+     512   2.73  87.23%   3.08%   9.69%  285028.915
+    1024   5.43  87.25%   3.05%   9.70%  286716.838
+    2048  10.82  87.27%   3.03%   9.71%  287961.489
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.68  87.23%   3.08%   9.69%  284417.291
+     256   1.35  87.28%   3.01%   9.70%  288192.816
+     512   2.69  87.28%   3.01%   9.72%  289035.217
+    1024   5.39  87.28%   3.01%   9.71%  288929.336
+    2048  10.78  87.28%   3.00%   9.71%  289085.304
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.68  87.26%   3.05%   9.69%  285470.846
+     256   1.37  87.26%   3.06%   9.68%  285090.511
+     512   2.71  87.26%   3.03%   9.71%  287685.562
+    1024   5.39  87.25%   3.02%   9.72%  288856.992
+    2048  10.77  87.25%   3.02%   9.73%  289259.468
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+     128   0.68  87.25%   3.04%   9.71%  286720.111
+     256   1.36  87.24%   3.06%   9.70%  285428.665
+     512   2.72  87.25%   3.05%   9.70%  285913.220
+    1024   5.41  87.25%   3.03%   9.72%  287896.112
+    2048  10.78  87.25%   3.03%   9.72%  288989.423
+
+
+# qemu-x86_64
+for i in $(seq 5); 
+do 
+    taskset -c 1 qemu-riscv64 linpack/linpack-rv64g; 
+done;
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      16   0.88  87.29%   2.64%  10.08%  27786.313
+      32   1.75  87.29%   2.62%  10.08%  27874.329
+      64   3.51  87.32%   2.62%  10.06%  27845.028
+     128   7.02  87.31%   2.62%  10.07%  27848.566
+     256  14.03  87.30%   2.63%  10.08%  27864.447
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      16   0.86  87.21%   2.64%  10.16%  28434.322
+      32   1.72  87.20%   2.63%  10.17%  28465.245
+      64   3.44  87.21%   2.64%  10.16%  28431.747
+     128   6.88  87.22%   2.63%  10.15%  28445.945
+     256  13.75  87.21%   2.63%  10.16%  28455.919
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      16   0.89  87.13%   2.63%  10.23%  27633.643
+      32   1.76  87.10%   2.64%  10.26%  27775.320
+      64   3.53  87.10%   2.64%  10.26%  27728.099
+     128   7.06  87.08%   2.64%  10.28%  27748.395
+     256  14.12  87.11%   2.64%  10.25%  27738.154
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      16   0.87  87.19%   2.64%  10.18%  28088.547
+      32   1.74  87.21%   2.62%  10.16%  28065.873
+      64   3.49  87.21%   2.63%  10.16%  28059.592
+     128   6.97  87.21%   2.63%  10.16%  28075.555
+     256  13.95  87.21%   2.63%  10.16%  28056.661
+
+Memory required:  315K.
+
+
+LINPACK benchmark, Double precision.
+Machine precision:  15 digits.
+Array size 200 X 200.
+Average rolled and unrolled performance:
+
+    Reps Time(s) DGEFA   DGESL  OVERHEAD    KFLOPS
+----------------------------------------------------
+      16   0.87  87.12%   2.65%  10.23%  28240.274
+      32   1.74  87.15%   2.64%  10.22%  28207.338
+      64   3.47  87.14%   2.65%  10.21%  28209.222
+     128   6.94  87.14%   2.64%  10.21%  28197.710
+     256  13.88  87.14%   2.64%  10.21%  28202.759
+
